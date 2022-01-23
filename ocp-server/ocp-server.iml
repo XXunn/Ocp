@@ -103,5 +103,7 @@
     <orderEntry type="module" module-name="ocp-generator" />
     <orderEntry type="library" name="Maven: com.baomidou:mybatis-plus-generator:3.3.1.tmp" level="project" />
     <orderEntry type="library" name="Maven: org.freemarker:freemarker:2.3.29" level="project" />
+    <orderEntry type="library" name="Maven: com.github.axet:kaptcha:0.0.9" level="project" />
+    <orderEntry type="library" name="Maven: com.jhlabs:filters:2.0.235" level="project" />
   </component>
 </module>

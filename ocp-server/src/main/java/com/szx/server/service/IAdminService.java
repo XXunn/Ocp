@@ -2,9 +2,11 @@ package com.szx.server.service;
 
 import com.baomidou.mybatisplus.extension.service.IService;
 import com.szx.server.pojo.Admin;
+import com.szx.server.pojo.Menu;
 import com.szx.server.pojo.RespBean;
 
 import javax.servlet.http.HttpServletRequest;
+import java.util.List;
 
 /**
  * <p>
@@ -20,10 +22,11 @@ public interface  IAdminService extends IService<Admin> {
      * 登陆后返回token
      * @param username
      * @param password
+     * @param code
      * @param request
      * @return
      */
-    RespBean login(String username, String password, HttpServletRequest request);
+    RespBean login(String username, String password, String code, HttpServletRequest request);
 
     /**
      * 根据用户名获取用户实体
@@ -31,4 +34,10 @@ public interface  IAdminService extends IService<Admin> {
      * @return
      */
     Admin getAdminByUserName(String username);
+
+    /**
+     * 直接获取用户id,查询列表
+     * @return
+     */
+    List<Menu> getMenusByAdminId();
 }

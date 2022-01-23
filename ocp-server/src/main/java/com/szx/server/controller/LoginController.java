@@ -29,7 +29,7 @@ public class LoginController {
     @PostMapping("/login")
     public RespBean login(@RequestBody AdminLogin adminLogin, HttpServletRequest request) {
         System.out.println("in login controller!");
-        return adminService.login(adminLogin.getUsername(), adminLogin.getPassword(), request);
+        return adminService.login(adminLogin.getUsername(), adminLogin.getPassword(), adminLogin.getCode(), request);
     }
 
     @ApiOperation(value = "获取当前用户信息")

@@ -27,6 +27,5 @@ public class RestAuthorizationEntryPoint implements AuthenticationEntryPoint {
         writer.write(new ObjectMapper().writeValueAsString(bean));
         writer.flush();
         writer.close();
-        System.out.println("in this method!");
     }
 }
