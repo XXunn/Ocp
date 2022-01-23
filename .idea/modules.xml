@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/ocp.iml" filepath="$PROJECT_DIR$/ocp.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ocp-generator/ocp-generator.iml" filepath="$PROJECT_DIR$/ocp-generator/ocp-generator.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ocp-server/ocp-server.iml" filepath="$PROJECT_DIR$/ocp-server/ocp-server.iml" />
+    </modules>
+  </component>
+</project>
