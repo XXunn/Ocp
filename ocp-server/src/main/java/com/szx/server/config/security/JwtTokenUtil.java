@@ -109,7 +109,7 @@ public class JwtTokenUtil {
     private Claims getClaimsFromToken(String token) {
         Claims claims = null;
         try {
-            Jwts.parser()
+            claims = Jwts.parser()
                     .setSigningKey(secret)
                     .parseClaimsJws(token)
                     .getBody();
