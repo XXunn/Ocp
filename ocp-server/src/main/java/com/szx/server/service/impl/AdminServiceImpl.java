@@ -87,9 +87,5 @@ public class AdminServiceImpl extends ServiceImpl<AdminMapper, Admin> implements
         return admin;
     }
 
-    @Override
-    public List<Menu> getMenusByAdminId() {
-        return adminMapper.getMenusByAdminId(((Admin)SecurityContextHolder.getContext().getAuthentication().getPrincipal()).getId());
-    }
 
 }

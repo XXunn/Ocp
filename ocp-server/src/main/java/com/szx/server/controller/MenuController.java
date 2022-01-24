@@ -3,6 +3,7 @@ package com.szx.server.controller;
 
 import com.szx.server.pojo.Menu;
 import com.szx.server.service.IAdminService;
+import com.szx.server.service.IMenuService;
 import io.swagger.annotations.ApiOperation;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -25,11 +26,11 @@ import java.util.List;
 public class MenuController {
 
     @Autowired
-    private IAdminService adminService;
+    private IMenuService menuService;
 
     @ApiOperation(value = "通过用户id查询菜单列表")
     @GetMapping("/menu")
     public List<Menu> getMenusByAdminId() {
-        return adminService.getMenusByAdminId();
+        return menuService.getMenusByAdminId();
     }
 }
