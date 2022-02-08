@@ -2,11 +2,12 @@ package com.szx.server.service.impl;
 
 import com.baomidou.mybatisplus.core.conditions.query.QueryWrapper;
 import com.baomidou.mybatisplus.extension.service.impl.ServiceImpl;
-import com.szx.server.config.security.JwtTokenUtil;
+import com.szx.server.config.security.component.JwtTokenUtil;
 import com.szx.server.mapper.AdminMapper;
+import com.szx.server.mapper.RoleMapper;
 import com.szx.server.pojo.Admin;
-import com.szx.server.pojo.Menu;
 import com.szx.server.pojo.RespBean;
+import com.szx.server.pojo.Role;
 import com.szx.server.service.IAdminService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
@@ -44,7 +45,8 @@ public class AdminServiceImpl extends ServiceImpl<AdminMapper, Admin> implements
     private String tokenHead;
     @Autowired
     private AdminMapper adminMapper;
-
+    @Autowired
+    private RoleMapper roleMapper;
 
     @Override
     public RespBean login(String username, String password, String code, HttpServletRequest request) {
@@ -85,6 +87,11 @@ public class AdminServiceImpl extends ServiceImpl<AdminMapper, Admin> implements
                 .eq("enabled", true));
         System.out.println(admin);
         return admin;
+    }
+
+    @Override
+    public List<Role> getRoles(Integer adminId) {
+        return roleMapper.getRoles(adminId);
     }
 
 

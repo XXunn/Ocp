@@ -1,4 +1,4 @@
-package com.szx.server.config.security;
+package com.szx.server.config.security.component;
 
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.szx.server.pojo.RespBean;

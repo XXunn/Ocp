@@ -1,9 +1,14 @@
 package com.szx.controller;
 
 
+import com.szx.pojo.Position;
+import io.swagger.annotations.ApiOperation;
+import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 
 import org.springframework.web.bind.annotation.RestController;
+
+import java.util.List;
 
 /**
  * <p>
@@ -14,7 +19,7 @@ import org.springframework.web.bind.annotation.RestController;
  * @since 2022-01-21
  */
 @RestController
-@RequestMapping("/position")
+@RequestMapping("/system/config/pos")
 public class PositionController {
 
 }
