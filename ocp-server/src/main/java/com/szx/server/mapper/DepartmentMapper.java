@@ -3,6 +3,8 @@ package com.szx.server.mapper;
 import com.baomidou.mybatisplus.core.mapper.BaseMapper;
 import com.szx.server.pojo.Department;
 
+import java.util.List;
+
 /**
  * <p>
  *  Mapper 接口
@@ -13,4 +15,9 @@ import com.szx.server.pojo.Department;
  */
 public interface DepartmentMapper extends BaseMapper<Department> {
 
+    /**
+     * 获取所有部门
+     * @return
+     */
+    List<Department> getAllDepartments(Integer parentId);
 }

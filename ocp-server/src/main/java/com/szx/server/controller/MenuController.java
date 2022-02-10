@@ -28,7 +28,7 @@ public class MenuController {
     @Autowired
     private IMenuService menuService;
 
-    @ApiOperation(value = "通过用户id查询菜单列表")
+    @ApiOperation(value = "通过当前登录用户id查询其所见菜单列表")
     @GetMapping("/menu")
     public List<Menu> getMenusByAdminId() {
         return menuService.getMenusByAdminId();
