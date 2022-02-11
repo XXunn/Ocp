@@ -2,6 +2,7 @@ package com.szx.server.service;
 
 import com.baomidou.mybatisplus.extension.service.IService;
 import com.szx.server.pojo.Department;
+import com.szx.server.pojo.RespBean;
 
 import java.util.List;
 
@@ -20,4 +21,15 @@ public interface IDepartmentService extends IService<Department> {
      * @return
      */
     List<Department> getAllDepartments();
+
+    /**
+     * 添加部门
+     * @return
+     */
+    RespBean adDep(Department dep);
+
+    /**
+     * 删除部门
+     */
+    RespBean deleteDep(Integer id);
 }

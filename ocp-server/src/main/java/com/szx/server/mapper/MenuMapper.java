@@ -1,7 +1,8 @@
 package com.szx.server.mapper;
 
-import  com.baomidou.mybatisplus.core.mapper.BaseMapper;
+import com.baomidou.mybatisplus.core.mapper.BaseMapper;
 import com.szx.server.pojo.Menu;
+import org.apache.ibatis.annotations.Param;
 
 import java.util.List;
 
@@ -15,7 +16,7 @@ import java.util.List;
  */
 public interface MenuMapper extends BaseMapper<Menu> {
 
-    List<Menu> getMenusByAdminId(Integer id);
+    List<Menu> getMenusByAdminId(@Param("id") Integer id);
 
     List<Menu> getMenusWithRole();
 

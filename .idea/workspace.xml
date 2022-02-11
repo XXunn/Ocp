@@ -2,16 +2,42 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a9c40d5d-3dda-4437-833f-a5bb8edf8b08" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/ocp-server/src/main/java/com/szx/server/config/MybatisPlusConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ocp-server/src/main/java/com/szx/server/pojo/RespPageBean.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ocp-server/src/main/java/com/szx/server/utils/AdminUtils.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ocp-server/src/main/java/com/szx/server/utils/DataConverter.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ocp-server/src/main/java/com/szx/server/controller/AdminController.java" beforeDir="false" afterPath="$PROJECT_DIR$/ocp-server/src/main/java/com/szx/server/controller/AdminController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ocp-server/src/main/java/com/szx/server/controller/DepartmentController.java" beforeDir="false" afterPath="$PROJECT_DIR$/ocp-server/src/main/java/com/szx/server/controller/DepartmentController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ocp-server/src/main/java/com/szx/server/controller/MenuController.java" beforeDir="false" afterPath="$PROJECT_DIR$/ocp-server/src/main/java/com/szx/server/controller/MenuController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ocp-server/src/main/java/com/szx/server/mapper/AdminMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/ocp-server/src/main/java/com/szx/server/mapper/AdminMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ocp-server/src/main/java/com/szx/server/mapper/AdminRoleMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/ocp-server/src/main/java/com/szx/server/mapper/AdminRoleMapper.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ocp-server/src/main/java/com/szx/server/mapper/DepartmentMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/ocp-server/src/main/java/com/szx/server/mapper/DepartmentMapper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ocp-server/src/main/java/com/szx/server/pojo/Department.java" beforeDir="false" afterPath="$PROJECT_DIR$/ocp-server/src/main/java/com/szx/server/pojo/Department.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ocp-server/src/main/java/com/szx/server/mapper/MenuMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/ocp-server/src/main/java/com/szx/server/mapper/MenuMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ocp-server/src/main/java/com/szx/server/pojo/Admin.java" beforeDir="false" afterPath="$PROJECT_DIR$/ocp-server/src/main/java/com/szx/server/pojo/Admin.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ocp-server/src/main/java/com/szx/server/pojo/Employee.java" beforeDir="false" afterPath="$PROJECT_DIR$/ocp-server/src/main/java/com/szx/server/pojo/Employee.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ocp-server/src/main/java/com/szx/server/service/IAdminService.java" beforeDir="false" afterPath="$PROJECT_DIR$/ocp-server/src/main/java/com/szx/server/service/IAdminService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ocp-server/src/main/java/com/szx/server/service/IDepartmentService.java" beforeDir="false" afterPath="$PROJECT_DIR$/ocp-server/src/main/java/com/szx/server/service/IDepartmentService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ocp-server/src/main/java/com/szx/server/service/impl/AdminServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/ocp-server/src/main/java/com/szx/server/service/impl/AdminServiceImpl.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ocp-server/src/main/java/com/szx/server/service/impl/DepartmentServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/ocp-server/src/main/java/com/szx/server/service/impl/DepartmentServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ocp-server/src/main/resources/config/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/ocp-server/src/main/resources/config/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ocp-server/src/main/java/com/szx/server/service/impl/MenuServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/ocp-server/src/main/java/com/szx/server/service/impl/MenuServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ocp-server/src/main/resources/mapper/AdminMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/ocp-server/src/main/resources/mapper/AdminMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ocp-server/src/main/resources/mapper/AdminRoleMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/ocp-server/src/main/resources/mapper/AdminRoleMapper.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ocp-server/src/main/resources/mapper/DepartmentMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/ocp-server/src/main/resources/mapper/DepartmentMapper.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ocp-server/target/classes/com/szx/server/controller/MenuController.class" beforeDir="false" afterPath="$PROJECT_DIR$/ocp-server/target/classes/com/szx/server/controller/MenuController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ocp-server/target/classes/com/szx/server/controller/AdminController.class" beforeDir="false" afterPath="$PROJECT_DIR$/ocp-server/target/classes/com/szx/server/controller/AdminController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ocp-server/target/classes/com/szx/server/controller/DepartmentController.class" beforeDir="false" afterPath="$PROJECT_DIR$/ocp-server/target/classes/com/szx/server/controller/DepartmentController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ocp-server/target/classes/com/szx/server/mapper/AdminMapper.class" beforeDir="false" afterPath="$PROJECT_DIR$/ocp-server/target/classes/com/szx/server/mapper/AdminMapper.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ocp-server/target/classes/com/szx/server/mapper/AdminRoleMapper.class" beforeDir="false" afterPath="$PROJECT_DIR$/ocp-server/target/classes/com/szx/server/mapper/AdminRoleMapper.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ocp-server/target/classes/com/szx/server/mapper/DepartmentMapper.class" beforeDir="false" afterPath="$PROJECT_DIR$/ocp-server/target/classes/com/szx/server/mapper/DepartmentMapper.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ocp-server/target/classes/com/szx/server/mapper/MenuMapper.class" beforeDir="false" afterPath="$PROJECT_DIR$/ocp-server/target/classes/com/szx/server/mapper/MenuMapper.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ocp-server/target/classes/com/szx/server/pojo/Admin.class" beforeDir="false" afterPath="$PROJECT_DIR$/ocp-server/target/classes/com/szx/server/pojo/Admin.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ocp-server/target/classes/com/szx/server/service/IAdminService.class" beforeDir="false" afterPath="$PROJECT_DIR$/ocp-server/target/classes/com/szx/server/service/IAdminService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ocp-server/target/classes/com/szx/server/service/IDepartmentService.class" beforeDir="false" afterPath="$PROJECT_DIR$/ocp-server/target/classes/com/szx/server/service/IDepartmentService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ocp-server/target/classes/com/szx/server/service/impl/AdminServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/ocp-server/target/classes/com/szx/server/service/impl/AdminServiceImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ocp-server/target/classes/com/szx/server/service/impl/DepartmentServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/ocp-server/target/classes/com/szx/server/service/impl/DepartmentServiceImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ocp-server/target/classes/com/szx/server/service/impl/MenuServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/ocp-server/target/classes/com/szx/server/service/impl/MenuServiceImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ocp-server/target/classes/mapper/AdminMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/ocp-server/target/classes/mapper/AdminMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ocp-server/target/classes/mapper/AdminRoleMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/ocp-server/target/classes/mapper/AdminRoleMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ocp-server/target/classes/mapper/DepartmentMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/ocp-server/target/classes/mapper/DepartmentMapper.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -57,6 +83,9 @@
     <property name="project.structure.side.proportion" value="0.40804598" />
     <property name="restartRequiresConfirmation" value="false" />
     <property name="settings.editor.selected.configurable" value="configurable.group.appearance" />
+  </component>
+  <component name="ReactorSettings">
+    <option name="notificationShown" value="true" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
@@ -136,7 +165,8 @@
       <workItem from="1644284860004" duration="15592000" />
       <workItem from="1644375543353" duration="8890000" />
       <workItem from="1644459672694" duration="743000" />
-      <workItem from="1644486339291" duration="4508000" />
+      <workItem from="1644486339291" duration="4564000" />
+      <workItem from="1644546484126" duration="13414000" />
     </task>
     <servers />
   </component>
@@ -149,11 +179,11 @@
     </state>
     <state x="414" y="183" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1920.1050/1920.0.1920.1050@0.0.1920.1050" timestamp="1642847587403" />
     <state x="2334" y="183" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1920.1050/1920.0.1920.1050@1920.0.1920.1050" timestamp="1642847814996" />
-    <state x="2685" y="233" key="#com.intellij.ide.util.MemberChooser" timestamp="1644300180600">
+    <state x="2685" y="233" key="#com.intellij.ide.util.MemberChooser" timestamp="1644567237029">
       <screen x="1920" y="0" width="1920" height="1050" />
     </state>
     <state x="765" y="233" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1050/1920.0.1920.1050@0.0.1920.1050" timestamp="1642845593121" />
-    <state x="2685" y="233" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1050/1920.0.1920.1050@1920.0.1920.1050" timestamp="1644300180600" />
+    <state x="2685" y="233" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1050/1920.0.1920.1050@1920.0.1920.1050" timestamp="1644567237029" />
     <state x="2502" y="206" key="#com.intellij.ide.util.frameworkSupport.AddFrameworkSupportDialog" timestamp="1642780151378">
       <screen x="1920" y="0" width="1920" height="1050" />
     </state>
@@ -162,83 +192,83 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="744" y="391" width="431" height="272" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes/0.0.1920.1050/1920.0.1920.1050@0.0.1920.1050" timestamp="1644300924820" />
-    <state width="1877" height="287" key="GridCell.Tab.0.bottom" timestamp="1644498956894">
+    <state width="1877" height="352" key="GridCell.Tab.0.bottom" timestamp="1644580705112">
       <screen x="1920" y="0" width="1920" height="1050" />
     </state>
-    <state width="1877" height="287" key="GridCell.Tab.0.bottom/0.0.1920.1050/1920.0.1920.1050@0.0.1920.1050" timestamp="1642939024822" />
-    <state width="1877" height="287" key="GridCell.Tab.0.bottom/0.0.1920.1050/1920.0.1920.1050@1920.0.1920.1050" timestamp="1644498956894" />
+    <state width="1877" height="352" key="GridCell.Tab.0.bottom/0.0.1920.1050/1920.0.1920.1050@0.0.1920.1050" timestamp="1644564332468" />
+    <state width="1877" height="352" key="GridCell.Tab.0.bottom/0.0.1920.1050/1920.0.1920.1050@1920.0.1920.1050" timestamp="1644580705112" />
     <state width="1877" height="287" key="GridCell.Tab.0.bottom/0.0.1920.1050@0.0.1920.1050" timestamp="1644322098617" />
-    <state width="1877" height="287" key="GridCell.Tab.0.center" timestamp="1644498956894">
+    <state width="1877" height="352" key="GridCell.Tab.0.center" timestamp="1644580705112">
       <screen x="1920" y="0" width="1920" height="1050" />
     </state>
-    <state width="1877" height="287" key="GridCell.Tab.0.center/0.0.1920.1050/1920.0.1920.1050@0.0.1920.1050" timestamp="1642939024822" />
-    <state width="1877" height="287" key="GridCell.Tab.0.center/0.0.1920.1050/1920.0.1920.1050@1920.0.1920.1050" timestamp="1644498956894" />
+    <state width="1877" height="352" key="GridCell.Tab.0.center/0.0.1920.1050/1920.0.1920.1050@0.0.1920.1050" timestamp="1644564332467" />
+    <state width="1877" height="352" key="GridCell.Tab.0.center/0.0.1920.1050/1920.0.1920.1050@1920.0.1920.1050" timestamp="1644580705112" />
     <state width="1877" height="287" key="GridCell.Tab.0.center/0.0.1920.1050@0.0.1920.1050" timestamp="1644322098617" />
-    <state width="1877" height="287" key="GridCell.Tab.0.left" timestamp="1644498956894">
+    <state width="1877" height="352" key="GridCell.Tab.0.left" timestamp="1644580705112">
       <screen x="1920" y="0" width="1920" height="1050" />
     </state>
-    <state width="1877" height="287" key="GridCell.Tab.0.left/0.0.1920.1050/1920.0.1920.1050@0.0.1920.1050" timestamp="1642939024821" />
-    <state width="1877" height="287" key="GridCell.Tab.0.left/0.0.1920.1050/1920.0.1920.1050@1920.0.1920.1050" timestamp="1644498956894" />
+    <state width="1877" height="352" key="GridCell.Tab.0.left/0.0.1920.1050/1920.0.1920.1050@0.0.1920.1050" timestamp="1644564332467" />
+    <state width="1877" height="352" key="GridCell.Tab.0.left/0.0.1920.1050/1920.0.1920.1050@1920.0.1920.1050" timestamp="1644580705112" />
     <state width="1877" height="287" key="GridCell.Tab.0.left/0.0.1920.1050@0.0.1920.1050" timestamp="1644322098617" />
-    <state width="1877" height="287" key="GridCell.Tab.0.right" timestamp="1644498956894">
+    <state width="1877" height="352" key="GridCell.Tab.0.right" timestamp="1644580705112">
       <screen x="1920" y="0" width="1920" height="1050" />
     </state>
-    <state width="1877" height="287" key="GridCell.Tab.0.right/0.0.1920.1050/1920.0.1920.1050@0.0.1920.1050" timestamp="1642939024822" />
-    <state width="1877" height="287" key="GridCell.Tab.0.right/0.0.1920.1050/1920.0.1920.1050@1920.0.1920.1050" timestamp="1644498956894" />
+    <state width="1877" height="352" key="GridCell.Tab.0.right/0.0.1920.1050/1920.0.1920.1050@0.0.1920.1050" timestamp="1644564332467" />
+    <state width="1877" height="352" key="GridCell.Tab.0.right/0.0.1920.1050/1920.0.1920.1050@1920.0.1920.1050" timestamp="1644580705112" />
     <state width="1877" height="287" key="GridCell.Tab.0.right/0.0.1920.1050@0.0.1920.1050" timestamp="1644322098617" />
-    <state width="1877" height="287" key="GridCell.Tab.1.bottom" timestamp="1644498956894">
+    <state width="1877" height="352" key="GridCell.Tab.1.bottom" timestamp="1644580705113">
       <screen x="1920" y="0" width="1920" height="1050" />
     </state>
-    <state width="1877" height="287" key="GridCell.Tab.1.bottom/0.0.1920.1050/1920.0.1920.1050@0.0.1920.1050" timestamp="1642939024822" />
-    <state width="1877" height="287" key="GridCell.Tab.1.bottom/0.0.1920.1050/1920.0.1920.1050@1920.0.1920.1050" timestamp="1644498956894" />
+    <state width="1877" height="352" key="GridCell.Tab.1.bottom/0.0.1920.1050/1920.0.1920.1050@0.0.1920.1050" timestamp="1644564358737" />
+    <state width="1877" height="352" key="GridCell.Tab.1.bottom/0.0.1920.1050/1920.0.1920.1050@1920.0.1920.1050" timestamp="1644580705113" />
     <state width="1877" height="287" key="GridCell.Tab.1.bottom/0.0.1920.1050@0.0.1920.1050" timestamp="1644322098617" />
-    <state width="1877" height="287" key="GridCell.Tab.1.center" timestamp="1644498956894">
+    <state width="1877" height="352" key="GridCell.Tab.1.center" timestamp="1644580705113">
       <screen x="1920" y="0" width="1920" height="1050" />
     </state>
-    <state width="1877" height="287" key="GridCell.Tab.1.center/0.0.1920.1050/1920.0.1920.1050@0.0.1920.1050" timestamp="1642939024822" />
-    <state width="1877" height="287" key="GridCell.Tab.1.center/0.0.1920.1050/1920.0.1920.1050@1920.0.1920.1050" timestamp="1644498956894" />
+    <state width="1877" height="352" key="GridCell.Tab.1.center/0.0.1920.1050/1920.0.1920.1050@0.0.1920.1050" timestamp="1644564358737" />
+    <state width="1877" height="352" key="GridCell.Tab.1.center/0.0.1920.1050/1920.0.1920.1050@1920.0.1920.1050" timestamp="1644580705113" />
     <state width="1877" height="287" key="GridCell.Tab.1.center/0.0.1920.1050@0.0.1920.1050" timestamp="1644322098617" />
-    <state width="1877" height="287" key="GridCell.Tab.1.left" timestamp="1644498956894">
+    <state width="1877" height="352" key="GridCell.Tab.1.left" timestamp="1644580705113">
       <screen x="1920" y="0" width="1920" height="1050" />
     </state>
-    <state width="1877" height="287" key="GridCell.Tab.1.left/0.0.1920.1050/1920.0.1920.1050@0.0.1920.1050" timestamp="1642939024822" />
-    <state width="1877" height="287" key="GridCell.Tab.1.left/0.0.1920.1050/1920.0.1920.1050@1920.0.1920.1050" timestamp="1644498956894" />
+    <state width="1877" height="352" key="GridCell.Tab.1.left/0.0.1920.1050/1920.0.1920.1050@0.0.1920.1050" timestamp="1644564358737" />
+    <state width="1877" height="352" key="GridCell.Tab.1.left/0.0.1920.1050/1920.0.1920.1050@1920.0.1920.1050" timestamp="1644580705113" />
     <state width="1877" height="287" key="GridCell.Tab.1.left/0.0.1920.1050@0.0.1920.1050" timestamp="1644322098617" />
-    <state width="1877" height="287" key="GridCell.Tab.1.right" timestamp="1644498956894">
+    <state width="1877" height="352" key="GridCell.Tab.1.right" timestamp="1644580705113">
       <screen x="1920" y="0" width="1920" height="1050" />
     </state>
-    <state width="1877" height="287" key="GridCell.Tab.1.right/0.0.1920.1050/1920.0.1920.1050@0.0.1920.1050" timestamp="1642939024822" />
-    <state width="1877" height="287" key="GridCell.Tab.1.right/0.0.1920.1050/1920.0.1920.1050@1920.0.1920.1050" timestamp="1644498956894" />
+    <state width="1877" height="352" key="GridCell.Tab.1.right/0.0.1920.1050/1920.0.1920.1050@0.0.1920.1050" timestamp="1644564358737" />
+    <state width="1877" height="352" key="GridCell.Tab.1.right/0.0.1920.1050/1920.0.1920.1050@1920.0.1920.1050" timestamp="1644580705113" />
     <state width="1877" height="287" key="GridCell.Tab.1.right/0.0.1920.1050@0.0.1920.1050" timestamp="1644322098617" />
-    <state width="1877" height="352" key="GridCell.Tab.2.bottom" timestamp="1642861354020">
+    <state width="1877" height="352" key="GridCell.Tab.2.bottom" timestamp="1644580705113">
       <screen x="1920" y="0" width="1920" height="1050" />
     </state>
     <state width="1877" height="352" key="GridCell.Tab.2.bottom/0.0.1920.1050/1920.0.1920.1050@0.0.1920.1050" timestamp="1642851784179" />
-    <state width="1877" height="352" key="GridCell.Tab.2.bottom/0.0.1920.1050/1920.0.1920.1050@1920.0.1920.1050" timestamp="1642861354020" />
-    <state width="1877" height="352" key="GridCell.Tab.2.center" timestamp="1642861354020">
+    <state width="1877" height="352" key="GridCell.Tab.2.bottom/0.0.1920.1050/1920.0.1920.1050@1920.0.1920.1050" timestamp="1644580705113" />
+    <state width="1877" height="352" key="GridCell.Tab.2.center" timestamp="1644580705113">
       <screen x="1920" y="0" width="1920" height="1050" />
     </state>
     <state width="1877" height="352" key="GridCell.Tab.2.center/0.0.1920.1050/1920.0.1920.1050@0.0.1920.1050" timestamp="1642851784179" />
-    <state width="1877" height="352" key="GridCell.Tab.2.center/0.0.1920.1050/1920.0.1920.1050@1920.0.1920.1050" timestamp="1642861354020" />
-    <state width="1877" height="352" key="GridCell.Tab.2.left" timestamp="1642861354020">
+    <state width="1877" height="352" key="GridCell.Tab.2.center/0.0.1920.1050/1920.0.1920.1050@1920.0.1920.1050" timestamp="1644580705113" />
+    <state width="1877" height="352" key="GridCell.Tab.2.left" timestamp="1644580705113">
       <screen x="1920" y="0" width="1920" height="1050" />
     </state>
     <state width="1877" height="352" key="GridCell.Tab.2.left/0.0.1920.1050/1920.0.1920.1050@0.0.1920.1050" timestamp="1642851784179" />
-    <state width="1877" height="352" key="GridCell.Tab.2.left/0.0.1920.1050/1920.0.1920.1050@1920.0.1920.1050" timestamp="1642861354020" />
-    <state width="1877" height="352" key="GridCell.Tab.2.right" timestamp="1642861354020">
+    <state width="1877" height="352" key="GridCell.Tab.2.left/0.0.1920.1050/1920.0.1920.1050@1920.0.1920.1050" timestamp="1644580705113" />
+    <state width="1877" height="352" key="GridCell.Tab.2.right" timestamp="1644580705113">
       <screen x="1920" y="0" width="1920" height="1050" />
     </state>
     <state width="1877" height="352" key="GridCell.Tab.2.right/0.0.1920.1050/1920.0.1920.1050@0.0.1920.1050" timestamp="1642851784179" />
-    <state width="1877" height="352" key="GridCell.Tab.2.right/0.0.1920.1050/1920.0.1920.1050@1920.0.1920.1050" timestamp="1642861354020" />
+    <state width="1877" height="352" key="GridCell.Tab.2.right/0.0.1920.1050/1920.0.1920.1050@1920.0.1920.1050" timestamp="1644580705113" />
     <state x="2447" y="158" key="SettingsEditor" timestamp="1642772307749">
       <screen x="1920" y="0" width="1920" height="1050" />
     </state>
     <state x="2447" y="158" key="SettingsEditor/0.0.1920.1050/1920.0.1920.1050@1920.0.1920.1050" timestamp="1642772307749" />
-    <state x="652" y="373" key="com.intellij.ide.util.TipDialog" timestamp="1644486340225">
+    <state x="652" y="373" key="com.intellij.ide.util.TipDialog" timestamp="1644582766338">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="652" y="373" key="com.intellij.ide.util.TipDialog/0.0.1920.1050/1920.0.1920.1050@0.0.1920.1050" timestamp="1644486340225" />
-    <state x="2572" y="373" key="com.intellij.ide.util.TipDialog/0.0.1920.1050/1920.0.1920.1050@1920.0.1920.1050" timestamp="1644459694063" />
+    <state x="652" y="373" key="com.intellij.ide.util.TipDialog/0.0.1920.1050/1920.0.1920.1050@0.0.1920.1050" timestamp="1644582766338" />
+    <state x="2572" y="373" key="com.intellij.ide.util.TipDialog/0.0.1920.1050/1920.0.1920.1050@1920.0.1920.1050" timestamp="1644546497360" />
     <state x="669" y="220" key="new project wizard" timestamp="1642230952118">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
@@ -255,5 +285,19 @@
       <screen x="1920" y="0" width="1920" height="1050" />
     </state>
     <state x="2536" y="178" width="670" height="676" key="search.everywhere.popup/0.0.1920.1050/1920.0.1920.1050@1920.0.1920.1050" timestamp="1642912894851" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-method">
+          <url>file://$PROJECT_DIR$/ocp-server/src/main/java/com/szx/server/exception/GlobalException.java</url>
+          <line>15</line>
+          <properties class="com.szx.server.exception.GlobalException" method="mySqlException">
+            <option name="EMULATED" value="true" />
+          </properties>
+          <option name="timeStamp" value="4" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>

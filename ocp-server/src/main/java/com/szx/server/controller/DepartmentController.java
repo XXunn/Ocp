@@ -2,12 +2,11 @@ package com.szx.server.controller;
 
 
 import com.szx.server.pojo.Department;
+import com.szx.server.pojo.RespBean;
 import com.szx.server.service.IDepartmentService;
 import io.swagger.annotations.ApiOperation;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
 
@@ -31,5 +30,20 @@ public class DepartmentController {
     public List<Department> getAllDepartments() {
         return departmentService.getAllDepartments();
     }
+
+    @ApiOperation(value = "添加部门")
+    @PostMapping("/")
+    public RespBean addDep(@RequestBody Department dep) {
+        return departmentService.adDep(dep);
+    }
+
+
+
+    @ApiOperation(value = "删除部门")
+    @DeleteMapping("/{id}")
+    public RespBean deleteDep(@PathVariable Integer id) {
+        return departmentService.deleteDep(id);
+    }
+
 
 }

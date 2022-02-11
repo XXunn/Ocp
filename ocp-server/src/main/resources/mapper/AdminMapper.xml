@@ -17,13 +17,39 @@
     </resultMap>
 
 
-    <resultMap id="Menus" type="com.szx.server.pojo.Menu" extends="BaseResultMap">
-
+    <resultMap id="AdminWithRole" type="com.szx.server.pojo.Admin" extends="BaseResultMap">
+        <collection property="roles" ofType="com.szx.server.pojo.Role">
+            <id column="rid" property="id" />
+            <result column="rname" property="name"/>
+            <result column="rnameZH" property="nameZh"/>
+        </collection>
     </resultMap>
+
+
 
     <!-- 通用查询结果列 -->
     <sql id="Base_Column_List">
         id, name, phone, telephone, address, enabled, username, password, userFace, remark
     </sql>
+
+    <!-- 获取所有管理员 -->
+    <select id="getAllAdmins" resultMap="AdminWithRole">
+        SELECT
+            a.*,
+            r.id AS rid,
+            r.`name` AS rname,
+            r.nameZh AS rnameZH
+        FROM
+            t_admin a
+            LEFT JOIN t_admin_role ar ON a.id = ar.adminId
+            LEFT JOIN t_role r ON r.id = ar.rid
+        WHERE
+            a.id != #{id}
+            <if test="keywords != null and keywords != ''">
+                AND a.`name` LIKE CONCAT( '%', #{keywords}, '%' )
+            </if>
+        ORDER BY
+            a.id
+    </select>
 
 </mapper>
