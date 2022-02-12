@@ -21,6 +21,8 @@ public class TestController {
 
     @GetMapping("/employee/advanced/test")
     public String helle3() {
+        int[] b = new int[10];
+
         return "/employee/advanced/test";
     }
 }

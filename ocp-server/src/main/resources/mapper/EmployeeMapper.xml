@@ -40,4 +40,83 @@
         id, name, gender, birthday, idCard, wedlock, nationId, nativePlace, politicId, email, phone, address, departmentId, jobLevelId, posId, engageForm, tiptopDegree, specialty, school, beginDate, workState, workID, contractTerm, conversionTime, notWorkDate, beginContract, endContract, workAge, salaryId
     </sql>
 
+    <resultMap id="EmployeeInfo" type="com.szx.server.pojo.Employee" extends="BaseResultMap">
+        <association property="nationId" javaType="com.szx.server.pojo.Nation">
+            <id column="nid" property="id"/>
+            <result column="nname" property="name"/>
+        </association>
+        <association property="politicsStatus" javaType="com.szx.server.pojo.PoliticsStatus">
+            <id column="pid" property="id"/>
+            <result column="pname" property="name"/>
+        </association>
+        <association property="department" javaType="com.szx.server.pojo.Department">
+            <id column="did" property="id"/>
+            <result column="dname" property="name"/>
+        </association>
+        <association property="joblevel" javaType="com.szx.server.pojo.Joblevel">
+            <id column="jid" property="id"/>
+            <result column="jname" property="name"/>
+        </association>
+        <association property="position" javaType="com.szx.server.pojo.Position">
+            <id column="posid" property="id"/>
+            <result column="posname" property="name"/>
+        </association>
+    </resultMap>
+    
+    <!-- 分页查询所有员工 -->
+    <select id="getEmployeeByPage" resultMap="EmployeeInfo">
+        SELECT
+            e.*,
+            nation.id AS nid,
+            nation.`name` AS nname,
+            ps.id AS pid,
+            department.id AS did,
+            department.`name` AS dname,
+            joblevel.id AS jid,
+            joblevel.`name` AS jname,
+            pos.id AS posid,
+            pos.`name` AS posname
+        FROM
+            t_employee e,
+            t_nation nation,
+            t_politics_status ps,
+            t_department department,
+            t_joblevel joblevel,
+            t_position pos
+        WHERE
+            e.nationId = nation.id
+            AND e.politicId = ps.id
+            AND e.departmentId = department.id
+            AND e.jobLevelId = jobLevel.id
+            AND e.posId = pos.id
+
+            <if test="employee.name!=null and employee.name!=''">
+                AND e.`name` LIKE CONCAT( '%', '', '%' )
+            </if>
+            <if test="employee.politicId!=null and employee.politicId!=''">
+                AND e.politicId =
+            </if>
+            <if test="employee.nationId!=null and employee.nationId!=''">
+                AND e.nationId =
+            </if>
+            <if test="employee.jobLevelId!=null and employee.jobLevelId!=''">
+                AND e.jobLevelId =
+            </if>
+            <if test="employee.posId!=null and employee.posId!=''">
+                AND e.posId =
+            </if>
+            <if test="employee.engageForm!=null and employee.engageForm!=''">
+                AND e.engageForm =
+            </if>
+            <if test="employee.departmentId!=null and employee.departmentId!=''">
+                AND e.departmentId =
+            </if>
+            <if test="employee.beginDateScope!=null and employee.beginDateScope==2">
+                AND e.beginDate BETWEEN #{beginDateScope[0]} AND #{beginDateScope[1]}
+            </if>
+            
+            ORDER BY
+                e.id
+    </select>
+
 </mapper>
