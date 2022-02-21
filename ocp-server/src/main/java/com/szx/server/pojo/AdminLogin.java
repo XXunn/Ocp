@@ -10,7 +10,10 @@ import lombok.experimental.Accessors;
  * 登录传入用户名密码
  */
 @Data
+// 生成 equals 和 hashCode=方法
 @EqualsAndHashCode(callSuper = false)
+// chain为一个布尔值，如果为true生成的set方法返回this，为false生成的set方法是void类型。
+// 默认为false，除非当fluent为true时，chain默认则为true
 @Accessors(chain = true)
 @ApiModel(value = "adminLogin", description = "用户登录")
 public class AdminLogin {

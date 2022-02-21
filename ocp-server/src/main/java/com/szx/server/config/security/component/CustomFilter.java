@@ -14,12 +14,16 @@ import org.springframework.util.AntPathMatcher;
 import java.util.Collection;
 import java.util.List;
 @Component
+/**
+ * 根据用户传来的请求地址，分析请求需要的角色，并将所需要的角色放在 Collection中
+ */
 public class CustomFilter implements FilterInvocationSecurityMetadataSource {
 
     @Autowired
     private IMenuService menuService;
 
     AntPathMatcher antPathMatcher = new AntPathMatcher();
+
     @Override
     public Collection<ConfigAttribute> getAttributes(Object object) throws IllegalArgumentException {
         String requestUrl = ((FilterInvocation) object).getRequestUrl();

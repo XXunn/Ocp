@@ -12,7 +12,6 @@ import org.springframework.stereotype.Service;
  * @author szx
  * @since 2022-01-21
  */
-@Service
 public interface IPositionService extends IService<Position> {
 
 }

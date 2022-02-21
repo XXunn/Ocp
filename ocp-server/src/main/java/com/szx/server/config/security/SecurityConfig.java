@@ -84,7 +84,7 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
                 .and()
                 // 关闭缓存
                 .headers().cacheControl();
-        // 添加jwt 拦截器
+        // 添加 jwt 拦截器
         http.addFilterBefore(jwtAuthenticationTokenFilter(), UsernamePasswordAuthenticationFilter.class);
         // 添加自定义未授权和未登录结果返回
         http.exceptionHandling()

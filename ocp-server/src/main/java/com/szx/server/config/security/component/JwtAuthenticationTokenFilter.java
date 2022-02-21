@@ -21,8 +21,10 @@ import java.io.IOException;
 
 public class JwtAuthenticationTokenFilter extends OncePerRequestFilter {
 
+    // jwt请求头
     @Value("${jwt.tokenHead}")
     private String tokenHead;
+    // 负载中的头
     @Value("${jwt.tokenHeader}")
     private String tokenHeader;
     @Autowired

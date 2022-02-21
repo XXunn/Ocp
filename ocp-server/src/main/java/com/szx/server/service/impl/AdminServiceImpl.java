@@ -103,7 +103,6 @@ public class AdminServiceImpl extends ServiceImpl<AdminMapper, Admin> implements
 
     @Override
     public List<Admin> getAllAdmins(String keywords) {
-
         return adminMapper.getAllAdmins(AdminUtils.getAdmin().getId(), keywords);
     }
 
