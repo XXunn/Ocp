@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>小恐龙奔跑</title>
+  <style>
+    :root {
+      --bg: #f7f7f7;
+      --ink: #2f2f2f;
+      --ground: #dadada;
+      --accent: #7ad6ff;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      min-height: 100vh;
+      display: grid;
+      place-items: center;
+      background: linear-gradient(to bottom, #ffffff 0%, var(--bg) 70%);
+      font-family: "Segoe UI", "PingFang SC", "Microsoft YaHei", sans-serif;
+      color: var(--ink);
+    }
+
+    .stage {
+      width: min(92vw, 760px);
+      height: 320px;
+      border: 2px solid #d8d8d8;
+      border-radius: 16px;
+      position: relative;
+      overflow: hidden;
+      background:
+        radial-gradient(circle at 20% 20%, #ffffff, transparent 45%),
+        radial-gradient(circle at 80% 10%, #ffffff, transparent 45%),
+        var(--bg);
+      box-shadow: 0 14px 34px rgba(0, 0, 0, 0.08);
+    }
+
+    .title {
+      position: absolute;
+      top: 16px;
+      left: 20px;
+      margin: 0;
+      font-size: 18px;
+      letter-spacing: 0.08em;
+      font-weight: 700;
+      opacity: 0.8;
+    }
+
+    .hint {
+      position: absolute;
+      bottom: 14px;
+      right: 16px;
+      margin: 0;
+      font-size: 12px;
+      opacity: 0.6;
+    }
+
+    .ground {
+      position: absolute;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      height: 64px;
+      background:
+        repeating-linear-gradient(
+          90deg,
+          transparent 0 16px,
+          rgba(47, 47, 47, 0.22) 16px 22px
+        ),
+        var(--ground);
+      animation: groundMove 0.5s linear infinite;
+    }
+
+    @keyframes groundMove {
+      from {
+        background-position-x: 0;
+      }
+      to {
+        background-position-x: -120px;
+      }
+    }
+
+    .dino {
+      position: absolute;
+      left: 170px;
+      bottom: 64px;
+      width: 132px;
+      height: 108px;
+      transform-origin: 50% 100%;
+      filter: drop-shadow(4px 6px 0 rgba(0, 0, 0, 0.12));
+    }
+
+    .body {
+      position: absolute;
+      width: 88px;
+      height: 52px;
+      left: 26px;
+      top: 34px;
+      background: var(--ink);
+      border-radius: 12px 16px 12px 10px;
+    }
+
+    .neck {
+      position: absolute;
+      width: 20px;
+      height: 32px;
+      left: 74px;
+      top: 10px;
+      background: var(--ink);
+      border-radius: 6px;
+      transform: rotate(8deg);
+      transform-origin: bottom center;
+    }
+
+    .head {
+      position: absolute;
+      width: 38px;
+      height: 28px;
+      left: 86px;
+      top: 0;
+      background: var(--ink);
+      border-radius: 10px 12px 10px 6px;
+    }
+
+    .eye {
+      position: absolute;
+      width: 6px;
+      height: 6px;
+      border-radius: 50%;
+      left: 24px;
+      top: 8px;
+      background: #fff;
+    }
+
+    .tail {
+      position: absolute;
+      width: 34px;
+      height: 10px;
+      left: 2px;
+      top: 50px;
+      background: var(--ink);
+      border-radius: 8px;
+      transform-origin: 100% 50%;
+    }
+
+    .arm {
+      position: absolute;
+      width: 11px;
+      height: 28px;
+      top: 50px;
+      left: 78px;
+      background: var(--ink);
+      border-radius: 6px;
+      transform-origin: top center;
+    }
+
+    .leg {
+      position: absolute;
+      width: 12px;
+      height: 36px;
+      top: 74px;
+      background: var(--ink);
+      border-radius: 6px;
+      transform-origin: top center;
+    }
+
+    .leg.left {
+      left: 44px;
+    }
+
+    .leg.right {
+      left: 74px;
+    }
+
+    .cloud {
+      position: absolute;
+      width: 58px;
+      height: 20px;
+      border-radius: 20px;
+      background: #fff;
+      opacity: 0.75;
+      box-shadow:
+        16px -8px 0 4px #fff,
+        34px 0 0 -2px #fff;
+      animation: cloudMove linear infinite;
+    }
+
+    .cloud.c1 {
+      top: 58px;
+      left: 100%;
+      animation-duration: 5s;
+    }
+
+    .cloud.c2 {
+      top: 102px;
+      left: 120%;
+      animation-delay: -2s;
+      animation-duration: 7s;
+      transform: scale(0.9);
+      opacity: 0.6;
+    }
+
+    @keyframes cloudMove {
+      from {
+        transform: translateX(0);
+      }
+      to {
+        transform: translateX(-920px);
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="stage">
+    <h1 class="title">小恐龙奔跑</h1>
+    <div class="cloud c1"></div>
+    <div class="cloud c2"></div>
+    <div class="dino" id="dino">
+      <div class="tail" id="tail"></div>
+      <div class="body"></div>
+      <div class="neck" id="neck"></div>
+      <div class="head">
+        <div class="eye"></div>
+      </div>
+      <div class="arm" id="arm"></div>
+      <div class="leg left" id="leg-left"></div>
+      <div class="leg right" id="leg-right"></div>
+    </div>
+    <div class="ground"></div>
+    <p class="hint">纯 CSS + JS 动画演示</p>
+  </div>
+
+  <script>
+    const dino = document.getElementById("dino");
+    const legLeft = document.getElementById("leg-left");
+    const legRight = document.getElementById("leg-right");
+    const arm = document.getElementById("arm");
+    const tail = document.getElementById("tail");
+    const neck = document.getElementById("neck");
+
+    let start = null;
+
+    function animate(ts) {
+      if (!start) start = ts;
+      const t = (ts - start) / 1000;
+
+      const bob = Math.sin(t * 12) * 3;
+      const legSwing = Math.sin(t * 20) * 28;
+      const armSwing = Math.sin(t * 20 + Math.PI / 2) * 20;
+      const tailSwing = Math.sin(t * 10 + Math.PI) * 18;
+      const neckTilt = Math.sin(t * 9) * 5;
+
+      dino.style.transform = `translateY(${bob}px)`;
+      legLeft.style.transform = `rotate(${legSwing}deg)`;
+      legRight.style.transform = `rotate(${-legSwing}deg)`;
+      arm.style.transform = `rotate(${-armSwing}deg)`;
+      tail.style.transform = `rotate(${tailSwing}deg)`;
+      neck.style.transform = `rotate(${8 + neckTilt}deg)`;
+
+      requestAnimationFrame(animate);
+    }
+
+    requestAnimationFrame(animate);
+  </script>
+</body>
+</html>
